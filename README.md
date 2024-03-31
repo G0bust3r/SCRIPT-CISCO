@@ -9,9 +9,9 @@ Instruções
 ------------
 1 -  Instale as dependencias conforme seu sistema operacional;
 
-2 -  Após executar o script em python , faça o passo 1 para configurar o ssh após isso o script irá se conectar via passo 2.
+2 -  Após executar o script em python , faça o passo 1 para configurar o ssh após isso o script irá se conectar via passo 2;
 
-3 -  No passo 2 irá conectar ao switch
+3 -  No passo 2 irá conectar ao switch;
 
 4 -  Após isso você poderá selecionar a opção desejada conforme necessidade.
 
