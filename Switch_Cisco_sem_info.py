@@ -247,6 +247,8 @@ def show_commands():
     print("3.  show interfaces trunk")
     print("4.  show ip route")
     print("5.  show running-config")
+    print("6.  show mac address")
+    print("7.  show vlan portinfo")
     print("0.  Sair")
     print("=======================================")
     opc = input("Escolha uma opção: ")
@@ -278,6 +280,18 @@ def show_commands():
     elif opc == '5':
         clear_screen()
         output = ssh.send_command('show running-config')
+        print(output)
+        print("")
+        clear_end_next()
+    elif opc == '6':
+        clear_screen()
+        output = ssh.send_command('show mac address')
+        print(output)
+        print("")
+        clear_end_next()
+    elif opc == '7':
+        clear_screen()
+        output = ssh.send_command('show vlan portinfo')
         print(output)
         print("")
         clear_end_next()
