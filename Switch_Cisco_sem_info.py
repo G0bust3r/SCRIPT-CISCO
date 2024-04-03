@@ -139,7 +139,7 @@ def port_trunk():
     print(F"{BLUE}\nConfigurando uma porta VLAN TRUNK:{NC}")
     port_trunk_vlan = input("Digite qual porta deseja passar a trunk \nex: {}fa0/48{} ou {}Et0/48{} ou {}Gi0/48{}: ".format(BLUE,NC,BLUE,NC,BLUE,NC))
     allow_trunk = input("\nDigite qual porta trunk ira ser passada conforme necessidade ex: 1,2,23,24,26,27,28,29,30,33: ")
-    commands = [f'interface {port_trunk_vlan}','switchport trunk encapsulation dot1q','switch mode trunk',f'switch trunk allowed vlan{allow_trunk}','exit']
+    commands = [f'interface {port_trunk_vlan}','switchport trunk encapsulation dot1q','switch mode trunk',f'switch trunk allowed vlan add {allow_trunk}','exit']
     connection = ConnectHandler(**device)
     connection.send_config_set(commands)
     connection.disconnect()
@@ -291,7 +291,7 @@ def show_commands():
         clear_end_next()
     elif opc == '7':
         clear_screen()
-        output = ssh.send_command('show vlan portinfo')
+        output = ssh.send_command('show int status')
         print(output)
         print("")
         clear_end_next()
