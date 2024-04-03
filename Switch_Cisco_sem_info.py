@@ -248,7 +248,7 @@ def show_commands():
     print("4.  show ip route")
     print("5.  show running-config")
     print("6.  show mac address")
-    print("7.  show vlan portinfo")
+    print("7.  show vlan status")
     print("0.  Sair")
     print("=======================================")
     opc = input("Escolha uma opção: ")
