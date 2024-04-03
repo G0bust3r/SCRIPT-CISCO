@@ -43,7 +43,7 @@ def instructions():
     print("interface <port_trunk> (ex:{}fa0/48{} ou {}Et0/48{} ou {}Gi0/48{}) ".format(BLUE,NC,BLUE,NC,BLUE,NC))
     print("switchport trunk encapsulation dot1q")
     print("switchport mode trunk")
-    print("exit")
+    print("end")
     print("wr")
     print("{}\nFinalizado Configuração inicial para acesso ao switch{}\n".format(GREEN , NC))
     print("{}\nVolte para o Menu e selecione a opção 2 para conectar via SSH ao switch.{}\n".format(BLUE , NC))
