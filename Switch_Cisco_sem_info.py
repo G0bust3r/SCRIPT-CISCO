@@ -40,6 +40,7 @@ def instructions():
     print("crypto key generate rsa")
     print("2048")
     print("ip ssh version 2")
+    print("do show interface status")
     print("interface <port_trunk> (ex:{}fa0/48{} ou {}Et0/48{} ou {}Gi0/48{}) ".format(BLUE,NC,BLUE,NC,BLUE,NC))
     print("switchport trunk encapsulation dot1q")
     print("switchport mode trunk")
